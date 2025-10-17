@@ -10,11 +10,8 @@ section {
     background: #09f;
     width: 100px;
     height: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    position: fixed;
+    inset: 0;
     margin: auto;
 }
 
