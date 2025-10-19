@@ -6,7 +6,7 @@ let stopwatchInterval;
 let runningTime = 0;
 
 const playPause = () => {
-    const isPaused = !playPauseButton.classList('running');
+    const isPaused = !playPauseButton.classList.contains('running');
     if (isPaused) {
         playPauseButton.classList.add('running');
         start();
