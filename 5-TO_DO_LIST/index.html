@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lista de Tareas</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap">
-        <script src="/5-TO_DO_LIST/styles.css" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="/5-TO_DO_LIST/styles.css">
+        <script src="/5-TO_DO_LIST/script.js" type="text/javascript" defer></script>
     </head>
     <body>
         <div class="list roundBorder">
@@ -18,15 +19,13 @@
                     </div>
                 </div>
                 <div id="dateText"></div>
-                <div>
-                    <form onsubmit="addNewTask(event)">
-                        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
-                        <button type="submit" class="addTaskButton">+</button>
-                        <button type="button" class="orderButton roundBorder" onclick="renderOrderedTask()">Ordenar</button>
-                    </form>
-                    <div id="tasksContainer"></div>
-                </div>
             </div>
+            <form onsubmit="addNewTask(event)">
+                <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+                <button type="submit" class="addTaskButton">+</button>
+                <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+            </form>
+            <div id="tasksContainer"></div>
         </div>
     </body>
 </html>
